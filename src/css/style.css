@@ -63,7 +63,7 @@ $vertical-rhythm    : true !default;
 
 body {
   font: $min-font;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .divider {

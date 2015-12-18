@@ -118,11 +118,12 @@ gulp.task('js',  function () {
 
 
 gulp.task('bs-reload', function () {
+  console.log("ll");
   browserSync.reload();
 });
 
 gulp.task('default', ['browser-sync'], function () {
-  gulp.watch('.src/js/*.js', ['js']).on('change', browserSync.reload);
-  gulp.watch(".src/css/*.css", ['css']).on('change', browserSync.reload);
-  gulp.watch('.views/*.html', ['bs-reload']);
+  gulp.watch('./src/js/*.js', ['js']).on('change', browserSync.reload);
+  gulp.watch("./src/css/*.css", ['css']).on('change', browserSync.reload);
+  gulp.watch('./views/*.html', ['bs-reload']);
 });
