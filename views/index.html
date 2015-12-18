@@ -1,0 +1,102 @@
+{% extends 'layout.html' %}
+
+{% block title %}Blog{% endblock %}
+
+{% block content %}
+  {% for post in posts %}
+  {% endfor %}
+  <h2>baisc cloumn</h2>
+  <section class="basic-column">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+  </section>
+  <h2>column cycle</h2>
+  <section class="row">
+    <div class="quarter">1</div>
+    <div class="half">2</div>
+    <div class="quarter-half">3</div>
+    <div class="quarter-half">4</div>
+  </section>
+  <h2>nesting</h2>
+  <section class="nesting">
+    <div>a</div>
+    <div>
+      <div>b</div>
+      <div>
+        <div>c</div>
+        <div>c</div>
+      </div>
+    </div>
+  </section>
+  <h2>offset elements</h2>
+  <section class="offset-ele">
+    <div>1</div>
+    <div>2</div>
+  </section>
+  <h2>alignment</h2>
+  <section class="alignment">
+    <div>Aligned</div>
+  </section>
+  <h2>edit mode</h2>
+  <div>
+    <section>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </section>
+
+    <section>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </section>
+  </div>
+  <h2>vertical grids</h2>
+  <div class="vertical-grids">
+    <section>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </section>
+  </div>
+  <h2>waffle grids</h2>
+  <div class="waffle-grids">
+    <section>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+    </section>
+  </div>
+  <h2>Flexbox Grids</h2>
+  <div class="flexbox-grids">
+    <section>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </section>
+    <div class="waffle">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+    </div>
+  </div>
+  <h2>Masonry Support</h2>
+  <div class="masonry">
+    <section>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </section>
+  </div>
+{% endblock %}
